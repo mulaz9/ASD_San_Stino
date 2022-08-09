@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Neo Sans Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+}
+
+.navbar {
+  z-index: 10;
+  padding: 0 30px;
+  position: sticky;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+.navbar .social {
+  width: 82px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .logo {
+  width: 82px;
+}
+.navbar .logo img {
+  width: 100%;
+}
+
+#header .slider {
+  color: white;
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  overflow: hidden;
+}
+#header .slider .slide--text {
+  transition: all 1s;
+}
+#header .slider .slide {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#header .slider .slide h1 {
+  font-size: 4rem;
+}
+#header .slider .slide .bg1 {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background: url(/bg1.a50512b7.jpg) no-repeat center/cover;
+}
+#header .slider .slide .bg2 {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background: url(/tribune.4550bacd.jpg) no-repeat center/cover;
+}
+#header .slider .dots {
+  z-index: 2;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+#header .slider .dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+#header .slider .dots__dot:last-child {
+  margin: 0;
+}
+#header .slider .dots__dot--active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=/main.39afc03c.css.map */

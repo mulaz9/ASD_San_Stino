@@ -1,0 +1,16 @@
+{
+  "name": "san_stino_calcio",
+  "version": "1.0.0",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/preset-env": "^7.18.10"
+  },
+  "devDependencies": {
+    "sass": "^1.54.3"
+  }
+}
