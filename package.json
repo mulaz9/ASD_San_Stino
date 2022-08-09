@@ -4,13 +4,15 @@
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html ./dist"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "license": "MIT",
   "dependencies": {
-    "@babel/preset-env": "^7.18.10"
+    "@babel/preset-env": "^7.18.10",
+    "parcel": "^2.7.0"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
     "sass": "^1.54.3"
   }
 }
