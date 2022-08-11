@@ -15,7 +15,7 @@
 84C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\parent-module\index.js133045389959090632 0
 92C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\svgo\plugins\removeComments.js133045389975085455 0
 88C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\css-declaration-sorter\src133045370462213096 1
-53C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\dist133046248815888679 1
+53C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\dist133046800164038228 1
 76C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\terser\LICENSE133045389959180610 0
 93C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\caniuse-lite\data\regions\IT.js133044414594530000 0
 106C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\postcss-merge-longhand\src\lib\decl\index.js133045370441090000 0
@@ -55,7 +55,7 @@
 90C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\ordered-binary\tests\test.js133045389964408920 0
 100C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\type-fest\source\conditional-pick.d.ts133045389968807492 0
 83C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\ansi-styles\readme.md133038361966960000 0
-58C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\main.scss133046245192418042 0
+58C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\main.scss133046798974451924 0
 84C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\cssnano-preset-default133045370460793554 1
 112C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\caniuse-lite\data\features\css-at-counter-style.js133044414594530000 0
 133C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\regenerate-unicode-properties\Script_Extensions\Egyptian_Hieroglyphs.js133038362673700000 0
@@ -75,7 +75,7 @@
 86C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\node-addon-api\README.md133045389973036118 0
 87C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\css-select\lib\compile.js133038362616460000 0
 97C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\@babel\plugin-transform-regenerator133044416736334331 1
-59C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\index.html133046248146259526 0
+59C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\index.html133046800162548849 0
 98C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\@babel\runtime\helpers\instanceof.js133038361767720000 0
 77C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\xxhash-wasm\esm133045389965728485 1
 109C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\@babel\plugin-syntax-async-generators\README.md133038362029410000 0
@@ -96,7 +96,7 @@
 110C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\@parcel\runtime-js\src\helpers\get-worker-url.js133045390007024220 0
 125C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\regenerate-unicode-properties\Binary_Property\Case_Ignorable.js133038362673700000 0
 101C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\terser\node_modules\commander\Readme.md133045389964159002 0
-63C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\utilityes.scss133045350094772436 0
+63C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\utilityes.scss133046797674088565 0
 100C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\terser\node_modules\commander\index.js133045389959760415 0
 66C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\package-lock.json133045390568765616 0
 58C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\.cache\dd133044419984842387 1
@@ -4223,7 +4223,7 @@
 108C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\caniuse-api\node_modules\.bin\browserslist.cmd133045370516402556 0
 119C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mtest4.c133045389979104149 0
 94C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\core-js-compat\node_modules\.bin133045390350314573 1
-64C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\dist\index.html133046248815828695 0
+64C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\dist\index.html133046800164018282 0
 100C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\@swc\helpers\lib\_iterable_to_array.js133045389975725243 0
 119C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mtest6.c133045389979593994 0
 125C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\sample-bdb.txt133045389983712718 0
@@ -6377,7 +6377,7 @@
 114C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\@parcel\transformer-posthtml\node_modules\semver\bin133045389959760415 1
 123C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\@parcel\transformer-posthtml\node_modules\semver\CHANGELOG.md133045389965908429 0
 120C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\@parcel\transformer-posthtml\node_modules\semver\semver.js133045389963559185 0
-72C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\dist\index.b1276d39.css133046245193419090 0
+72C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\dist\index.b1276d39.css133046798976921135 0
 121C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\@parcel\transformer-posthtml\node_modules\semver\bin\semver133045389959940358 0
 109C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\@parcel\transformer-posthtml\lib\loadPlugins.js133045390000747994 0
 117C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\node_modules\@parcel\transformer-posthtml\lib\PostHTMLTransformer.js133045390000886919 0
@@ -7894,7 +7894,7 @@
 72C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\dist\index.1c088b84.css133046214082904649 0
 76C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\dist\index.2e7ec894.css.map133045390591692905 0
 76C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\dist\index.97324f9f.css.map133046248815878688 0
-76C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\dist\index.b1276d39.css.map133046245193448822 0
+76C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\dist\index.b1276d39.css.map133046798976941128 0
 75C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\dist\index.c4775257.js.map133046214082774698 0
 58C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\.cache\90133044419984308781 1
 62C:\Users\mulaz\OneDrive\Desktop\San_Stino_Calcio\dist\index.js133045371817324553 0

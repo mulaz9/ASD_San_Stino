@@ -7,6 +7,7 @@ const menuLine1 = document.querySelector(".line--1");
 const menuLine2 = document.querySelector(".line--2");
 const menuLine3 = document.querySelector(".line--3");
 const headerText = document.querySelectorAll(".slide--text");
+const html = document.querySelector(".html");
 let menuIsOpened = false;
 
 const showMenu = function () {
@@ -19,6 +20,7 @@ const showMenu = function () {
       menuLine3.style.transform = "rotate(-135deg)";
       menuLine3.style.top = "40px";
       menu.style.transform = "translateY(0)";
+      html.style.overflowY = "hidden";
       menuIsOpened = true;
       console.log(menuIsOpened);
     } else {
@@ -28,7 +30,8 @@ const showMenu = function () {
       menuLine2.style.top = "30px";
       menuLine3.style.transform = "rotate(-180deg)";
       menuLine3.style.top = "50px";
-      menu.style.transform = "translateY(-110%)";
+      menu.style.transform = "translateY(-150%)";
+      html.style.overflowY = "auto";
       menuIsOpened = false;
     }
   });

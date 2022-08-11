@@ -55,14 +55,14 @@
   position: fixed;
   top: 150px;
   right: 0;
-  transform: translateY(-110%);
+  transform: translateY(-150%);
 }
 
 .menu > div {
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   width: 100vw;
-  height: 82vh;
+  height: 80vh;
   background-color: #000000b3;
   flex: none;
   justify-content: center;

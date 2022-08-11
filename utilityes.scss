@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Neo Sans Pro", sans-serif;
+  background-color: #f4f4f4;
 }
 
 $light-color: white;
@@ -16,6 +17,10 @@ a {
 ul {
   list-style: none;
   padding: 0;
+}
+
+h1 {
+  text-align: center;
 }
 
 .overlay {
