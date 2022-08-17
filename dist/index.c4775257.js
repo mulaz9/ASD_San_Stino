@@ -1,41 +1,6 @@
 "use strict";
-// Show menu
-const hamburger = document.querySelector(".hamburger");
-const menu = document.querySelector(".menu");
-const menuLine1 = document.querySelector(".line--1");
-const menuLine2 = document.querySelector(".line--2");
-const menuLine3 = document.querySelector(".line--3");
-const headerText = document.querySelectorAll(".slide--text");
-const html = document.querySelector(".html");
-let menuIsOpened = false;
-const showMenu = function() {
-    hamburger.addEventListener("click", function() {
-        if (!menuIsOpened) {
-            headerText.forEach((txt)=>txt.style.opacity = 0);
-            menuLine1.style.opacity = 0;
-            menuLine2.style.transform = "rotate(135deg)";
-            menuLine2.style.top = "40px";
-            menuLine3.style.transform = "rotate(-135deg)";
-            menuLine3.style.top = "40px";
-            menu.style.transform = "translateY(0)";
-            html.style.overflowY = "hidden";
-            menuIsOpened = true;
-            console.log(menuIsOpened);
-        } else {
-            headerText.forEach((txt)=>txt.style.opacity = 1);
-            menuLine1.style.opacity = 1;
-            menuLine2.style.transform = "rotate(180deg)";
-            menuLine2.style.top = "30px";
-            menuLine3.style.transform = "rotate(-180deg)";
-            menuLine3.style.top = "50px";
-            menu.style.transform = "translateY(-150%)";
-            html.style.overflowY = "auto";
-            menuIsOpened = false;
-        }
-    });
-};
-showMenu();
 // Slider
+const slide2 = document.querySelector(".slide--2");
 const slider = function() {
     const slides = document.querySelectorAll(".slide");
     const dotContainer = document.querySelector(".dots");
@@ -61,6 +26,7 @@ const slider = function() {
     const nextSlide = function() {
         if (curSlide === maxSlide - 1) curSlide = 0;
         else curSlide++;
+        slide2.classList.remove("hidden");
         goToSlide(curSlide);
         activateDot(curSlide);
     };
@@ -68,6 +34,7 @@ const slider = function() {
     const prevSlide = function() {
         if (curSlide === 0) curSlide = maxSlide - 1;
         else curSlide--;
+        slide2.classList.remove("hidden");
         goToSlide(curSlide);
         activateDot(curSlide);
     };
@@ -84,18 +51,72 @@ const slider = function() {
     });
     // Mobile touch
     const slider = document.querySelector(".slider");
-    slider.addEventListener("touchend", function() {
+    slider.addEventListener("touchmove", function() {
         nextSlide();
     });
     // Dot Handler
     dotContainer.addEventListener("click", function(e) {
         if (e.target.classList.contains("dots__dot")) {
             const { slide  } = e.target.dataset;
+            slide2.classList.remove("hidden");
             goToSlide(slide);
             activateDot(slide);
         }
     });
 };
 slider();
+// Rendering News
+const news = document.querySelector("#news");
+const getNews = async function() {
+    const response = await fetch("https://acd-san-stino.herokuapp.com/api/news-sections?sort[0]=publishedAt:desc&pagination[limit]=3&populate=foto");
+    const newsJson = await response.json();
+    const data = newsJson.data;
+    // console.log([...data.entries()]);
+    const generateMarkup = function(i, id) {
+        return /*html*/ `<a href="./single.html?id=${id}"><div class="news--content">
+    <img src="https://acd-san-stino.herokuapp.com${data[i].attributes.foto.data.attributes.url}" />
+    <div class="news--text">
+      <p class="news--date">${data[i].attributes.data}<span class="blue--line">--</span>
+      </p>
+      <h3 class="news--title">${data[i].attributes.titolo}</h3>
+    </div>
+  </div></a>
+    `;
+    };
+    for (const item of data.entries()){
+        let id = item[1].id;
+        let markup = generateMarkup(item[0], id);
+        news.insertAdjacentHTML("beforeend", markup);
+    }
+};
+getNews();
+// Rendering Videos
+const videos = document.querySelector("#videos");
+const getVideos = async function() {
+    // Ottenere dati API
+    const response = await fetch("https://acd-san-stino.herokuapp.com/api/video-sections?sort[0]=publishedAt:desc&pagination[limit]=3&populate=video");
+    const newsJson = await response.json();
+    const data = newsJson.data;
+    console.log(data);
+    // Creare html
+    const generateMarkup = function(i) {
+        return /*html*/ `
+  <div class="video--content">
+    <video controls>
+      <source src="https://acd-san-stino.herokuapp.com${data[i].attributes.video.data.attributes.url}" type="video/mp4" />
+    </video>
+    <p class="video--date">
+    ${data[i].attributes.data}
+    </p>
+    <h3 class="video--title">${data[i].attributes.titolo}</h3>
+  </div>
+    `;
+    };
+    for (const item of data.entries()){
+        let markup = generateMarkup(item[0]);
+        videos.insertAdjacentHTML("beforeend", markup);
+    }
+};
+getVideos();
 
 //# sourceMappingURL=index.c4775257.js.map
