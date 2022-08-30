@@ -2,12 +2,12 @@
 // Rendering News
 const news = document.querySelector(".news");
 const getNews = async function() {
-    const response = await fetch("https://acd-san-stino.herokuapp.com/api/news-sections?sort[0]=publishedAt:desc&populate=foto");
+    const response = await fetch(`https://acd-san-stino.herokuapp.com/api/news-sections?sort[0]=publishedAt:desc&populate=foto`);
     const newsJson = await response.json();
     const data = newsJson.data;
     // console.log([...data.entries()]);
     const generateMarkup = function(i, id) {
-        return /*html*/ `<a href="./single.html?id=${id}"><div class="news--content">
+        return /*html*/ `<a href="./single_news.html?id=${id}"><div class="news--content">
     <img src="https://acd-san-stino.herokuapp.com${data[i].attributes.foto.data.attributes.url}" />
     <div class="news--text">
       <p class="news--date">${data[i].attributes.data}<span class="blue--line">--</span>
@@ -28,7 +28,7 @@ getNews();
 const videos = document.querySelector(".videos");
 const getVideos = async function() {
     // Ottenere dati API
-    const response = await fetch("https://acd-san-stino.herokuapp.com/api/video-sections?sort[0]=publishedAt:desc&populate=video");
+    const response = await fetch(`https://acd-san-stino.herokuapp.com/api/video-sections?sort[0]=publishedAt:desc&populate=video`);
     const newsJson = await response.json();
     const data = newsJson.data;
     console.log(data);

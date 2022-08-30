@@ -37,5 +37,24 @@ const showMenu = function() {
     });
 };
 showMenu();
+// Show submenu squadre
+const squadre = document.querySelector(".squadre");
+const ulSquadre = document.querySelector(".ul--squadre");
+const arrowUp = document.querySelector(".arrow--up");
+let submenuIsOpen = false;
+const showSubmenu = function() {
+    squadre.addEventListener("click", function() {
+        if (submenuIsOpen == false) {
+            ulSquadre.style.display = "block";
+            arrowUp.style.color = "white";
+            submenuIsOpen = true;
+        } else {
+            ulSquadre.style.display = "none";
+            arrowUp.style.color = "#52b3de";
+            submenuIsOpen = false;
+        }
+    });
+};
+showSubmenu();
 
 //# sourceMappingURL=index.69335193.js.map

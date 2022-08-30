@@ -14,10 +14,11 @@
       src="https://kit.fontawesome.com/f2426038f9.js"
       crossorigin="anonymous"
     ></script>
-    <script defer src="./singlePhotoGallery.js"></script>
-    <script defer src="./menu.js"></script>
-    <link rel="stylesheet" href="./main.scss" />
-    <link rel="stylesheet" href="./menu.css" />
+    <script defer src="./js/singlePhotoGallery.js"></script>
+    <script defer src="./js/menu.js"></script>
+    <script defer src="./js/utilityes.js"></script>
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="stylesheet" href="./scss/menu.css" />
     <title>ACD San Stino</title>
   </head>
   <body>
@@ -39,11 +40,19 @@
         <div>
           <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="./news.html">News</a></li>
             <li><a href="./risultati.html">Risultati</a></li>
-            <li><a href="#">Squadre</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contatti</a></li>
+            <li>
+              <a class="squadre" href="#">Squadre <span class="arrow--up">&#11167</span></a>
+              <ul class="ul--squadre">
+                <li><a href="./squadre.html#prima-squadra">Prima Squadra</a></li>
+                <li>Juniores</li>
+                <li>Allievi</li>
+              </ul>
+            </li>
+            <li><a href="./gallery.html">Foto Gallery</a></li>
+            <li><a href="./storia.html">Storia del Club</a></li>
+            <li><a href="./contatti.html">Contatti</a></li>
           </ul>
         </div>
       </div>

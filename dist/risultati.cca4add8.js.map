@@ -1,0 +1,1 @@
+{"mappings":"AAAA,YAAY;AAEZ,MAAM,UAAU,GAAG,CAAC,mCAAmC,CAAC,AAAC","sources":["js/utilityes.js"],"sourcesContent":["// Utilityes\r\n\r\nconst STRAPI_URL = `https://acd-san-stino.herokuapp.com`;\r\n"],"names":[],"version":3,"file":"risultati.cca4add8.js.map","sourceRoot":"/__parcel_source_root/"}

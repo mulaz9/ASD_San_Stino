@@ -1,0 +1,1 @@
+{"mappings":"AAEA,MAAMA,WAAa","sources":["utilityes.js"],"sourcesContent":["// Utilityes\r\n\r\nconst STRAPI_URL = `https://acd-san-stino.herokuapp.com`;\r\n"],"names":["STRAPI_URL"],"version":3,"file":"index.a6989600.js.map"}
