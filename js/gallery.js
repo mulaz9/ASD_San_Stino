@@ -11,7 +11,7 @@ const getPhotos = async function () {
   const generateMarkup = function (i, id) {
     return /*html*/ `<a href="./test.html?id=${id}">
     <div class="photo">
-      <img src="${STRAPI_URL}${data[i].attributes.foto.data.attributes.url}" />
+      <img src="${data[i].attributes.foto.data.attributes.url}" />
       <p>${data[i].attributes.titolo}</p>
     </div></a>
       `;
