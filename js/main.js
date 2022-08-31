@@ -98,7 +98,7 @@ const getNews = async function () {
   // console.log([...data.entries()]);
   const generateMarkup = function (i, id) {
     return /*html*/ `<a href="./single_news.html?id=${id}"><div class="news--content">
-    <img src="${STRAPI_URL}${data[i].attributes.foto.data.attributes.url}" />
+    <img src="${data[i].attributes.foto.data.attributes.url}" />
     <div class="news--text">
       <p class="news--date">${data[i].attributes.data}<span class="blue--line">--</span>
       </p>
@@ -132,7 +132,7 @@ const getVideos = async function () {
     return /*html*/ `
   <div class="video--content">
     <video controls>
-      <source src="${STRAPI_URL}${data[i].attributes.video.data.attributes.url}" type="video/mp4" />
+      <source src="${data[i].attributes.video.data.attributes.url}" type="video/mp4" />
     </video>
     <p class="video--date">
     ${data[i].attributes.data}
