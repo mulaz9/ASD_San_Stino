@@ -5,14 +5,14 @@ const news = document.querySelector(".news");
 
 const getNews = async function () {
   const response = await fetch(
-    `https://acd-san-stino.herokuapp.com/api/news-sections?sort[0]=publishedAt:desc&populate=foto`
+    `${STRAPI_URL}/api/news-sections?sort[0]=publishedAt:desc&populate=foto`
   );
   const newsJson = await response.json();
   const data = newsJson.data;
   // console.log([...data.entries()]);
   const generateMarkup = function (i, id) {
     return /*html*/ `<a href="./single_news.html?id=${id}"><div class="news--content">
-    <img src="https://acd-san-stino.herokuapp.com${data[i].attributes.foto.data.attributes.url}" />
+    <img src="${data[i].attributes.foto.data.attributes.url}" />
     <div class="news--text">
       <p class="news--date">${data[i].attributes.data}<span class="blue--line">--</span>
       </p>
@@ -36,7 +36,7 @@ const videos = document.querySelector(".videos");
 const getVideos = async function () {
   // Ottenere dati API
   const response = await fetch(
-    `https://acd-san-stino.herokuapp.com/api/video-sections?sort[0]=publishedAt:desc&populate=video`
+    `${STRAPI_URL}/api/video-sections?sort[0]=publishedAt:desc&populate=video`
   );
   const newsJson = await response.json();
   const data = newsJson.data;
@@ -46,7 +46,7 @@ const getVideos = async function () {
     return /*html*/ `
   <div class="video--content">
     <video controls>
-      <source src="https://acd-san-stino.herokuapp.com${data[i].attributes.video.data.attributes.url}" type="video/mp4" />
+      <source src="${data[i].attributes.video.data.attributes.url}" type="video/mp4" />
     </video>
     <p class="video--date">
     ${data[i].attributes.data}<span class="blue--line">--</span>

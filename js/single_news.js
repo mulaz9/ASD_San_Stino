@@ -15,7 +15,7 @@ const getSingleNews = async function () {
 
   const generateMarkup = function () {
     return /*html*/ `<div class="single--container">
-    <img src="${STRAPI_URL}${data.attributes.foto.data.attributes.url}"/>
+    <img src="${data.attributes.foto.data.attributes.url}"/>
     <div class="single--news--text">
     <p class="single--news--date">${data.attributes.data}<span class="blue--line">--</span>
     </p>
